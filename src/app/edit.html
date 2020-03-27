@@ -5,13 +5,6 @@
     <meta charset="UTF-8">
     <title>AlfayOmega</title>
     <link href="styles/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        $( document ).ready(function() {
-            $('.dropdown-toggle').dropdown();
-        });
-    </script>
 </head>
 
 <body>
@@ -33,34 +26,38 @@
             </li>
         </ul>
     </nav>
-    <div class="row tabs-container justify-content-center align-items-center">
-        <img class="profile-img" src="https://direct.rhapsody.com/imageserver/images/alb.416504108/500x500.jpg">
-        <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Photo</span>
+    <div class="container" style="padding:10%">
+        <div class="row justify-content-center align-items-center text-size">
+            <img class="profile-img" src="https://direct.rhapsody.com/imageserver/images/alb.416504108/500x500.jpg">
+            <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Photo</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="https://direct.rhapsody.com/imageserver/images/alb.416504108/500x500.jpg">
                 </div>
-                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="https://direct.rhapsody.com/imageserver/images/alb.416504108/500x500.jpg">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="Clint Reyna">
             </div>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="clint@gmail.com">
             </div>
-            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="Clint Reyna">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Emergency Contact</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="7549374758">
+            </div>
+            
+            <a href="profile.html" class="btn btn-primary btn-lg btn-block">Save</a>
         </div>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="clint@gmail.com">
-        </div>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Emergency Contact</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="7549374758">
-        </div>
-        
-        <button type="button" class="btn btn-primary btn-lg btn-block">Save</button>
+
     </div>
+    
 </body>
 </html>

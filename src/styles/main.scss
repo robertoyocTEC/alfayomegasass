@@ -4,7 +4,7 @@
 
 
 
-
+@import 'variables';
 @import 'login';
 @import 'chat';
 @import 'home';
@@ -14,10 +14,21 @@
 @import 'vertical-flex-division';
 
 
+.text-size{
+    font-size: $text-size;
+}
 
 
-.full-height {
+
+
+
+
+.full-height{
     height: 100%!important;
+}
+
+.full-width {
+    width: 100%!important;
 }
 
 body{

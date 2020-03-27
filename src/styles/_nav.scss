@@ -1,7 +1,7 @@
 
-@media only screen and (min-device-width:321px) and (max-device-width:480px) {
-    $tabs-height: 120px;
-    $text-size:50px;
+@media only screen and (min-width:320px) and (max-width:576px) {
+    $tabs-height: 60px;
+    $text-size:16px;
     .tabs-container{
         height: $tabs-height;
         width: 100%;
@@ -15,7 +15,7 @@
         font-size: $text-size;
     }
 }
-@media only screen and (min-width:1224px) {
+@media only screen and (min-width:577px) {
     $tabs-height: 50px;
     $text-size:24px;
     .tabs-container{

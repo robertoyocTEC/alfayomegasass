@@ -5,13 +5,6 @@
     <meta charset="UTF-8">
     <title>AlfayOmega</title>
     <link href="styles/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        $( document ).ready(function() {
-            $('.dropdown-toggle').dropdown();
-        });
-    </script>
 </head>
 
 <body>
@@ -33,20 +26,21 @@
             </li>
         </ul>
     </nav>
-    <div class="row tabs-container justify-content-center align-items-center">
+    <div class="d-flex flex-column justify-content-center align-items-center">
         <img class="profile-img" src="https://direct.rhapsody.com/imageserver/images/alb.416504108/500x500.jpg">
-        <p class="name-profile">Clint Reyna</p>
-        <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                        E-Mail: clint@gmail.com
-                    </li>
+        <p class="name-profile text-size">Clint Reyna</p>
+        <ul class="list-group list-group-flush text-size">
+            <li class="list-group-item">
+                E-Mail: clint@gmail.com
+            </li>
             <li class="list-group-item">
                 Emergency Contact: 453984658
             </li>
             <li class="list-group-item">
                 Language:
                 <div class="btn-group">
-                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         Language
                     </button>
                     <div class="dropdown-menu">
@@ -56,7 +50,20 @@
                 </div>
             </li>
         </ul>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Edit</button>
+        <a href="edit.html" class="btn btn-primary btn-lg text-size">Edit</a>
+
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="js/profile.js"></script>
 </body>
+
 </html>
