@@ -6,3 +6,10 @@ footer{
     height: $footer-height;
     background-color: lightblue;
 }
+
+.ribbon{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 20px;
+}
