@@ -1,0 +1,143 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+$footer-height: 100px;
+
+
+
+.full-height {
+    height: 100%!important;
+}
+.complete-height {
+    height: calc(100vh - #{$footer-height});
+}
+footer{
+    height: $footer-height;
+    background-color: lightblue;
+}
+
+
+
+
+
+@media only screen and (min-device-width:321px) and (max-device-width:480px) {
+    $write-height: 210px;
+    $tabs-height: 120px;
+    $text-size:50px;
+    $text-secondary-size:30px;
+    .chat-container{
+        padding: 10px 10px;
+        height: calc(100vh - #{$write-height} - #{$tabs-height});
+        overflow-y: scroll;
+    }
+    .write-container {
+        height: $write-height;
+        font-size: $text-size;
+    }
+    .writter {
+        font-size: $text-size;
+    }
+    .tabs-container{
+        height: $tabs-height;
+        width: 100%;
+        font-size: $text-size;
+    }
+    .tab-logo {
+        height: calc(#{$tabs-height} - 30px);
+    }
+    .menu-link{
+        padding: 10px 25px;
+        font-size: $text-size;
+    }
+    .sent-message {
+        background-color: lightgrey;
+        border-radius: 10px;
+        margin: 10px 0;
+        margin-left: 15%;
+        padding: 15px 10px;
+        box-sizing: content-box;
+        font-size:  $text-size;
+    }
+    
+    .received-message {
+        background-color:lightgreen;
+        border-radius: 10px;
+        margin: 10px 0;
+        margin-right: 15%;
+        padding: 15px 10px;
+        box-sizing: content-box;
+        font-size:  $text-size;
+    }
+    .hour-info{
+        text-align: right;
+        font-size:  $text-secondary-size;
+        font-style: italic;
+    }
+    
+    .date-info {
+        border-radius: 10px;
+        font-size:  $text-secondary-size;
+        text-align: center;
+        background-color: lightblue;
+        font-style: italic;
+        width: fit-content;
+        padding: 10px 30px;
+    }
+}
+@media only screen and (min-width:1224px) {
+    $write-height: 110px;
+    $tabs-height: 50px;
+    $text-size:24px;
+    $text-secondary-size:10px;
+    .chat-container{
+        padding: 10px 10px;
+        height: calc(100vh - #{$write-height} - #{$tabs-height});
+        overflow-y: scroll;
+    }
+    .write-container {
+        height: $write-height;
+    }
+    .tabs-container{
+        height: $tabs-height;
+        width: 100%;
+
+    }
+    .tab-logo {
+        height: calc(#{$tabs-height} - 30px);
+    }
+    .sent-message {
+        background-color: lightgrey;
+        border-radius: 10px;
+        margin: 10px 0;
+        margin-left: 15%;
+        padding: 15px 10px;
+        box-sizing: content-box;
+        font-size: $text-size;
+    }
+    
+    .received-message {
+        background-color:lightgreen;
+        border-radius: 10px;
+        margin: 10px 0;
+        margin-right: 15%;
+        padding: 15px 10px;
+        box-sizing: content-box;
+        font-size: $text-size;
+    }
+    .hour-info{
+        text-align: right;
+        font-size:  $text-secondary-size;
+        font-style: italic;
+    }
+    
+    .date-info {
+        border-radius: 10px;
+        font-size:  $text-secondary-size;
+        text-align: center;
+        background-color: lightblue;
+        font-style: italic;
+        width: fit-content;
+        padding: 10px 30px;
+    }
+}

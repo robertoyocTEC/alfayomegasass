@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AlfayOmega</title>
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav class="row tabs-container justify-content-center align-items-end">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link menu-link" href="#"><img class="tab-logo" src="assets/logo.png"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link menu-link active" href="#">Chat</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link menu-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link menu-link" href="#">History</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="chat-container d-flex flex-column justify-content-end">
+
+        <div class=" d-flex flex-column justify-content-end">
+            <div style="display:flex; justify-content: center;">
+                <div class="date-info">
+                    Yesterday
+                </div>
+            </div>
+            <div class="sent-message">
+                I'm going to hang out with some friends in the park, can you please register that activity?
+                <div class="hour-info">9:03 AM</div>
+            </div>
+
+            <div class="received-message">
+                Perfect! I'm registering that points into your activity log
+                <div class="hour-info">9:95 PM</div>
+            </div>
+            <div style="display:flex; justify-content: center;">
+                <div class="date-info">
+                    Today
+                </div>
+            </div>
+
+            <div class="received-message">
+                Hello! How are you today? Are you ready for the next session?
+                <div class="hour-info">12:34 PM</div>
+            </div>
+            <div class="sent-message">
+                Yes, I am
+                <div class="hour-info">12:35 PM</div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="write-container">
+        <div class="form-group full-height p-2 m-0">
+            <textarea class="form-control full-height writter " id="chat" rows="3" placeholder="Type here"></textarea>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -4,7 +4,13 @@
   "description": "Suicide prevention application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run serve",
+    "build": "npm run dist:clean; npm run dist:create; npm run dist:copy; npm run build:sass;",
+    "build:sass": "sass src/styles/main.scss dist/styles/main.css",
+    "dist:clean": "rm -rf dist/",
+    "dist:create": "mkdir dist",
+    "dist:copy": "cp -r src/app/ dist/; cp -r src/assets/ dist/assets",
+    "serve": "npm run build; node index"
   },
   "repository": {
     "type": "git",
@@ -20,5 +26,11 @@
   "bugs": {
     "url": "https://github.com/robertoyocTEC/alfayomegasass/issues"
   },
-  "homepage": "https://github.com/robertoyocTEC/alfayomegasass#readme"
+  "homepage": "https://github.com/robertoyocTEC/alfayomegasass#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
 }
