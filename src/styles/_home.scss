@@ -1,0 +1,63 @@
+
+
+@function suma($valor1, $valor2){
+    @return $valor1 + $valor2;
+}
+
+
+
+@media only screen and (min-device-width:321px) and (max-device-width:480px) {
+    $tabs-height: 120px;
+    $panic-diameter: 500px;
+    $text-size: 50px;
+    $max-text-size: suma($text-size, 20px);
+    .home-container{
+        height: calc(100% - #{$tabs-height});
+    }
+    .panic-button {
+        border-radius: 50%;
+        height: $panic-diameter;
+        width: $panic-diameter;
+        background-color: red;
+        font-size: $max-text-size;
+    }
+    .toast-fixed {
+        position: absolute;
+        right: 0;
+        top:0;
+        .toast-header{
+            background-color: red;
+            color: white;
+
+        }
+    }
+    .home {
+        .toast {
+            margin-top: 50px;
+            width: 100%;
+            font-size: 50px;
+            max-width: none;
+        }
+    }
+    .activity{
+        width: 60%;
+        font-size: $text-size;
+        margin: 25px 0px;
+        border-radius: 20px;
+    }
+    .activities{
+        font-size: $text-size;
+    }
+
+}
+@media only screen and (min-width:1224px) {
+    $tabs-height: 50px;
+    .home-container {
+        height: calc(100% - #{$tabs-height});
+
+    }
+    .panic-button {
+        
+    }
+    
+}

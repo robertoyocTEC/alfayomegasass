@@ -6,10 +6,11 @@
   "scripts": {
     "start": "npm run serve",
     "build": "npm run dist:clean; npm run dist:create; npm run dist:copy; npm run build:sass;",
-    "build:sass": "sass src/styles/main.scss dist/styles/main.css",
+    "build:sass": "sass src/styles/main.scss dist/styles/main.css; npm run fa:copy",
     "dist:clean": "rm -rf dist/",
     "dist:create": "mkdir dist",
     "dist:copy": "cp -r src/app/ dist/; cp -r src/assets/ dist/assets",
+    "fa:copy": "cp -r node_modules/@fortawesome/fontawesome-free/webfonts dist/styles/webfonts",
     "serve": "npm run build; node index"
   },
   "repository": {
@@ -28,6 +29,7 @@
   },
   "homepage": "https://github.com/robertoyocTEC/alfayomegasass#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "bootstrap": "^4.4.1"
   },
   "devDependencies": {
