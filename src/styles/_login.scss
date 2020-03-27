@@ -1,0 +1,8 @@
+$footer-height: 100px;
+.complete-height {
+    height: calc(100vh - #{$footer-height});
+}
+footer{
+    height: $footer-height;
+    background-color: lightblue;
+}
