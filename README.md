@@ -13,4 +13,6 @@ Install dependencies with `npm i` then
 
 run `npm start`  
 
-Visit `localhost:4000`
+Visit `localhost:4000`  
+
+Note: Maybe you need to create a `dist` repository manually
