@@ -16,18 +16,6 @@
     .writter {
         font-size: $text-size;
     }
-    .tabs-container{
-        height: $tabs-height;
-        width: 100%;
-        font-size: $text-size;
-    }
-    .tab-logo {
-        height: calc(#{$tabs-height} - 30px);
-    }
-    .menu-link{
-        padding: 10px 25px;
-        font-size: $text-size;
-    }
     .sent-message {
         background-color: lightgrey;
         border-radius: 10px;
@@ -75,14 +63,6 @@
     }
     .write-container {
         height: $write-height;
-    }
-    .tabs-container{
-        height: $tabs-height;
-        width: 100%;
-
-    }
-    .tab-logo {
-        height: calc(#{$tabs-height} - 30px);
     }
     .sent-message {
         background-color: lightgrey;
