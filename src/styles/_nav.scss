@@ -1,28 +1,33 @@
 
-@media only screen and (min-width:320px) and (max-width:576px) {
+@media only screen and (min-width: 320px) and (max-width: 576px) {
     $tabs-height: 60px;
     $text-size:16px;
-    .tabs-container{
+
+    .tabs-container {
         height: $tabs-height;
         width: 100%;
         font-size: $text-size;
     }
+
     .tab-logo {
         height: calc(#{$tabs-height} - 30px);
     }
-    .menu-link{
+
+    .menu-link {
         padding: 10px 25px;
         font-size: $text-size;
     }
 }
-@media only screen and (min-width:577px) {
+
+@media only screen and (min-width: 577px) {
     $tabs-height: 50px;
     $text-size:24px;
-    .tabs-container{
+
+    .tabs-container {
         height: $tabs-height;
         width: 100%;
-
     }
+
     .tab-logo {
         height: calc(#{$tabs-height} - 30px);
     }

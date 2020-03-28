@@ -1,8 +1,7 @@
 
-@function division($columns){
+@function division($columns) {
     @return (100%/12)*$columns;
 }
-
 
 @for $i from 1 through 12 {
     .cl-#{$i} {

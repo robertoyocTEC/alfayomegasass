@@ -1,13 +1,15 @@
 $footer-height: 100px;
+
 .complete-height {
     height: calc(100vh - #{$footer-height});
 }
-footer{
+
+footer {
     height: $footer-height;
     background-color: lightblue;
 }
 
-.ribbon{
+.ribbon {
     display: flex;
     justify-content: flex-end;
     width: 100%;

@@ -1,0 +1,8 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "no-empty-source": null,
+    "indentation": [4, { "baseIndentLevel": 0}],
+    "at-rule-no-unknown": null
+  }
+}

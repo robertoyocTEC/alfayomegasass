@@ -1,19 +1,18 @@
 
-
-@function suma($valor1, $valor2){
+@function suma($valor1,$valor2) {
     @return $valor1 + $valor2;
 }
 
-
-
-@media only screen and (min-width:320px) and (max-width:576px) {
+@media only screen and (min-width: 320px) and (max-width: 576px) {
     $tabs-height: 60px;
     $panic-diameter: 180px;
     $text-size: 16px;
     $max-text-size: suma($text-size, 20px);
-    .home-container{
+
+    .home-container {
         height: calc(100% - #{$tabs-height});
     }
+
     .panic-button {
         border-radius: 50%;
         height: $panic-diameter;
@@ -21,16 +20,18 @@
         background-color: red;
         font-size: $max-text-size;
     }
+
     .toast-fixed {
         position: absolute;
         right: 0;
-        top:0;
-        .toast-header{
+        top: 0;
+
+        .toast-header {
             background-color: red;
             color: white;
-
         }
     }
+
     .home {
         .toast {
             margin-top: 10px;
@@ -39,25 +40,29 @@
             max-width: none;
         }
     }
-    .activity{
+
+    .activity {
         width: 60%;
-        font-size: $text-size!important;
-        margin: 4px 0px;
+        font-size: $text-size !important;
+        margin: 4px 0;
         border-radius: 20px;
     }
-    .activities{
+
+    .activities {
         font-size: $text-size;
     }
-
 }
-@media only screen and (min-width:577px) {
+
+@media only screen and (min-width: 577px) {
     $tabs-height: 60px;
     $panic-diameter: 180px;
     $text-size: 16px;
     $max-text-size: suma($text-size, 20px);
-    .home-container{
+
+    .home-container {
         height: calc(100% - #{$tabs-height});
     }
+
     .panic-button {
         border-radius: 50%;
         height: $panic-diameter;
@@ -65,29 +70,32 @@
         background-color: red;
         font-size: $max-text-size;
     }
+
     .toast-fixed {
         position: absolute;
         left: 0;
-        bottom:0;
-        .toast-header{
+        bottom: 0;
+
+        .toast-header {
             background-color: red;
             color: white;
-
         }
     }
+
     .home {
         .toast {
             font-size: $text-size;
         }
     }
-    .activity{
+
+    .activity {
         width: 60%;
-        font-size: $text-size!important;
-        margin: 4px 0px;
+        font-size: $text-size !important;
+        margin: 4px 0;
         border-radius: 20px;
     }
-    .activities{
+
+    .activities {
         font-size: $text-size;
     }
-    
 }

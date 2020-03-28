@@ -11,7 +11,8 @@
     "dist:create": "mkdir dist",
     "dist:copy": "cp -r src/app/ dist/; cp -r src/assets/ dist/assets",
     "fa:copy": "cp -r node_modules/@fortawesome/fontawesome-free/webfonts dist/styles/webfonts",
-    "serve": "npm run build; node index"
+    "serve": "npm run build; node index",
+    "lint:styles": "stylelint \"src/styles/*.scss\""
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,8 @@
     "bootstrap": "^4.4.1"
   },
   "devDependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "stylelint": "^11.0.0",
+    "stylelint-config-standard": "^19.0.0"
   }
 }

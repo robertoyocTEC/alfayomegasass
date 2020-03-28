@@ -1,61 +1,62 @@
 
 @mixin font-neue {
     font-family: 'Comic Neue', cursive;
+}
 
-  }
-
-
-
-
-@media only screen and (min-width:320px) and (max-width:576px) {
+@media only screen and (min-width: 320px) and (max-width: 576px) {
     $write-height: 100px;
     $tabs-height: 60px;
     $text-size:16px;
     $text-secondary-size:12px;
 
-    .chat-container{
+    .chat-container {
         padding: 10px 10px;
         height: calc(100vh - #{$write-height} - #{$tabs-height});
         overflow-y: scroll;
     }
+
     .write-container {
         height: $write-height;
         font-size: $text-size;
     }
+
     .writter {
         font-size: $text-size;
     }
+
     .sent-message {
         @include font-neue;
+
         background-color: lightgrey;
         border-radius: 10px;
         margin: 10px 0;
         margin-left: 15%;
         padding: 15px 10px;
         box-sizing: content-box;
-        font-size:  $text-size;
+        font-size: $text-size;
     }
-    
+
     .received-message {
         @include font-neue;
 
-        background-color:lightgreen;
+        background-color: lightgreen;
         border-radius: 10px;
         margin: 10px 0;
         margin-right: 15%;
         padding: 15px 10px;
         box-sizing: content-box;
-        font-size:  $text-size;
+        font-size: $text-size;
     }
-    .hour-info{
+
+    .hour-info {
         text-align: right;
-        font-size:  $text-secondary-size;
+        font-size: $text-secondary-size;
         font-style: italic;
     }
-    
+
     .date-info {
         border-radius: 10px;
-        font-size:  $text-secondary-size;
+        font-size: $text-secondary-size;
         text-align: center;
         background-color: lightblue;
         font-style: italic;
@@ -63,21 +64,26 @@
         padding: 10px 30px;
     }
 }
-@media only screen and (min-width:577px) {
+
+@media only screen and (min-width: 577px) {
     $write-height: 110px;
     $tabs-height: 50px;
     $text-size:16px;
     $text-secondary-size:10px;
-    .chat-container{
+
+    .chat-container {
         padding: 10px 10px;
         height: calc(100vh - #{$write-height} - #{$tabs-height});
         overflow-y: scroll;
     }
+
     .write-container {
         height: $write-height;
     }
+
     .sent-message {
         @include font-neue;
+
         background-color: lightgrey;
         border-radius: 10px;
         margin: 10px 0;
@@ -86,10 +92,11 @@
         box-sizing: content-box;
         font-size: $text-size;
     }
-    
+
     .received-message {
         @include font-neue;
-        background-color:lightgreen;
+
+        background-color: lightgreen;
         border-radius: 10px;
         margin: 10px 0;
         margin-right: 30%;
@@ -97,15 +104,16 @@
         box-sizing: content-box;
         font-size: $text-size;
     }
-    .hour-info{
+
+    .hour-info {
         text-align: right;
-        font-size:  $text-secondary-size;
+        font-size: $text-secondary-size;
         font-style: italic;
     }
-    
+
     .date-info {
         border-radius: 10px;
-        font-size:  $text-secondary-size;
+        font-size: $text-secondary-size;
         text-align: center;
         background-color: lightblue;
         font-style: italic;
