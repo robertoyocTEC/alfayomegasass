@@ -5,7 +5,7 @@
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
     $tabs-height: 60px;
-    $panic-diameter: 180px;
+    $panic-diameter: $panic-diameter-mobile;
     $text-size: 16px;
     $max-text-size: suma($text-size, 20px);
 
@@ -34,7 +34,7 @@
 
     .home {
         .toast {
-            margin-top: 10px;
+            margin-top: 40px;
             width: 100%;
             font-size: $text-size;
             max-width: none;
@@ -55,7 +55,7 @@
 
 @media only screen and (min-width: 577px) {
     $tabs-height: 60px;
-    $panic-diameter: 180px;
+    $panic-diameter: $panic-diameter-desktop;
     $text-size: 16px;
     $max-text-size: suma($text-size, 20px);
 
